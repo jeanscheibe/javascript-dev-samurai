@@ -1,0 +1,24 @@
+<html>
+  <meta charset="UTF-8" />
+  <script>
+    // function mult(n) {
+    //     n *= n
+    //     return n
+    // }
+
+    // console.log(mult(10))
+
+    //Arrowe functions são normalmente atribuidas a uma constante
+
+    const mult = (n) => (n *= n);
+
+    console.log(mult(10));
+
+    // Da maneira escrita acima (sem chaves {} na função) o return é automático
+    // Se utilizar as chaves é necessário colocar o return conforme abaixo
+
+    const mult = (n) => {
+      return (n *= n);
+    };
+  </script>
+</html>
