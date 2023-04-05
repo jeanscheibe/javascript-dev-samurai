@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Título da página -->
+    <h1>Gerador de senha</h1>
+
+    <!-- Mensagem -->
+    <p>Utilize o nosso gerador online para criar uma senha forte e segura.</p>
+
+    <!-- Caixa de texto -->
+    <input type="text" name="password" id="password" />
+
+    <!-- Número de caracteres -->
+    <input
+      type="range"
+      name="password-length"
+      id="password-length"
+      value="16"
+      min="4"
+      max="64"
+    />
+
+    <button>Copiar senha</button>
+
+    <script>
+      function generatePassword() {
+        const chars =
+          "abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ123456789?!@&*()[]";
+
+        let password = "";
+
+        for (let i = 0; i < 8; i++) {
+          const randomNumber = Math.floor(Math.random() * chars.length);
+          password += chars.substring(randomNumber, randomNumber + 1);
+        }
+
+        const inputeEl = document.querySelector("#password");
+        inputeEl.value = password;
+
+        console.log(password);
+      }
+
+      generatePassword();
+    </script>
+  </body>
+</html>
