@@ -1,0 +1,18 @@
+<html>
+  <meta charset="UTF-8" />
+  <script>
+    // 05/04/2023
+
+    console.log(new Date("30/04/2022")); // não valida esse formato de entrada
+    console.log(new Date("04/30/2022")); // valida esse formato de entrada
+    console.log(new Date("2022-04-30")); // valida esse formato de entrada
+    console.log(new Date("2022 04 30")); // valida esse formato de entrada
+
+    // por quê fazer essa transformação? para conseguir fazer contas
+
+    // Transformar uma data para String
+
+    console.log(new Date().toString());
+    console.log(new Date().toISOString()); // Formato mais aceito em outras linguagens e implementações
+  </script>
+</html>
