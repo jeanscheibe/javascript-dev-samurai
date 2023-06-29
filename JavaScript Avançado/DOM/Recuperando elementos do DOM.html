@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Curriculum</title>
+  </head>
+  <body>
+    <img src="foto.png" width="100" />
+    <h1 id="person-name" class="title">Seu nome</h1>
+    <h2>Programador JavaScript</h2>
+    <p>
+      Conhecimento em programação Frontend, Backend para desenvolvimento de
+      sistemas Fullstack.
+    </p>
+    <p>
+      Para mais detalhes, por favor, visite meu
+      <a href="https://github.com/jeanscheibe">Github</a>
+    </p>
+    <script>
+      // Hierarquia do DOM
+      // Document --> Nodes --> Elements --> Attributes
+
+      // console.log(document) // certo
+      // console.log(document.body) // certo
+      // console.log(document.body.h1) // errado
+
+      // Acessando os nós do DOM
+
+      // document.getElementById()
+      // const titleEl = document.getElementById("person-name")
+      // console.log("titleEl", titleEl)
+
+      //document.getElementByTagName()
+      //const titleEl = document.getElementsByTagName("p");
+      //console.log("titleEl", titleEl);
+
+      document.getElementsByClassName();
+      const titleEl = document.getElementsByClassName("title");
+      console.log("titleEl", titleEl);
+
+      // iterando...
+      // for (const el of titleEL) {
+      // console.log("el", el)
+      // }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+  <meta charset="UTF-8" />
+  <script>
+    let people = ["Felipe", "André", "Paulo", "Jonny", "Marcelo"];
+
+    // 0 -> n
+    // 5 elementos = people.length
+
+    // retornar elementos específicos de um Array
+    console.log(people[2]);
+
+    // retornar o último item
+    console.log(people[people.length - 1]);
+
+    // retornar "fatias de um array"
+    console.log(people.slice(2));
+    console.log(people.slice(1, 3));
+
+    // adicionar novos elementos no array (início e fim)
+    people.push("Ana");
+    console.log(people);
+
+    people.unshift("Maria");
+    console.log(people);
+
+    // remover elementos no array (início e fim)
+    people.pop(); //remove elementos do fim do Array
+    people.shift(); //remove elementos do início do Array
+    // console.log(people.pop()); a função pop possui retorno
+    console.log(people);
+
+    // remover "fatias" de um array
+    // people.splice(1, 1) // a partir do um, retirou um item
+    people.splice(1, 2); // a partir do um, retirou dois itens
+    console.log(people);
+
+    // localizar elementos
+    let index = people.indexOf("Jonny");
+
+    console.log(index);
+  </script>
+</html>
