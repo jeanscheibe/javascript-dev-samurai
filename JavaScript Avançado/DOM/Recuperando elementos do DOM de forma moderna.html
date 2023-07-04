@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Curriculum</title>
+  </head>
+  <body>
+    <img src="carinha_redonda.png" width="150" />
+    <h1 id="person-name" class="title">Seu nome</h1>
+    <h2>Programador JavaScript</h2>
+    <p>
+      Conhecimento em programação Frontend, Backend para desenvolvimento de
+      sistemas Fullstack.
+    </p>
+    <p>
+      Para mais detalhes, por favor, visite meu
+      <a href="https://github.com/jeanscheibe">Github</a>
+    </p>
+    <script>
+      //   Acessando os nós do DOM
+
+      // Forma antiga
+      // document.getElementById()
+      // document.getElementsByTagName()
+      // document.getElementsByClassName()
+
+      // forma moderna
+      // document.querySelector('selector')
+      // document.querySelectorAll('selector')
+      // element.querySelector('selector')
+      // element.querySelectorAll('selector')
+
+      // CSS selectors
+      // Ref: https://developer.mozzila.org/en-US/docs/Web/CSS/CSS_Selectors
+
+      // Universal: *
+      // Id: #el-id
+      // Tag: <el>
+      // Class: .el-class
+      // Atributos: [attr=value]
+      // Grupos (vírgula): el, el
+      // Descendentes (espaço): el el
+      // Childs (>): el > el
+
+      //console.log("*", document.querySelectorAll("*"))
+      //console.log("id", document.querySelector("#person-name"))
+      //console.log("*tag, document.querySelectorAll("p"))
+      //console.log("class", document.querySelectorAll(".text"))
+      //console.log("attr", document.querySelectorAll("a[href=https://github.com/jeanscheibe]"))
+      //console.log("attr", document.querySelector("a[href=https://github.com/jeanscheibe]"))
+
+      // iterando toda a árvore DOM
+      for (const el of document.querySelectorAll("*")) {
+        console.log("el", el);
+      }
+    </script>
+  </body>
+</html>
