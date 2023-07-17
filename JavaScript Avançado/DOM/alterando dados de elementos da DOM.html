@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Curriculum</title>
+  </head>
+  <body>
+    <img src="carinha_redonda.png" width="150" />
+    <h1 id="person-name" class="title">Seu nome</h1>
+    <h2>Programador JavaScript</h2>
+    <p>
+      Conhecimento em programação Frontend, Backend para desenvolvimento de
+      sistemas Fullstack.
+    </p>
+    <p>
+      Para mais detalhes, por favor, visite meu
+      <a href="https://github.com/jeanscheibe">Github</a>
+    </p>
+    <script>
+      // Alterando um objeto da DOM
+
+      const titleEl = document.querySelector("#person-name");
+      //   console.log("titleEl value:", titleEl.innerHTML);
+
+      titleEl.innerHTML = "Jean Scheibe";
+      titleEl.style.color = "red";
+    </script>
+  </body>
+</html>

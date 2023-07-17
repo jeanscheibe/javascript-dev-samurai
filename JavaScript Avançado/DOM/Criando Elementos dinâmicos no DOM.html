@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Curriculum</title>
+  </head>
+  <body>
+    <img src="carinha_redonda.png" width="150" />
+    <h1 id="person-name" class="title">Seu nome</h1>
+    <h2>Programador JavaScript</h2>
+    <p>
+      Conhecimento em programação Frontend, Backend para desenvolvimento de
+      sistemas Fullstack.
+    </p>
+    <p>
+      Para mais detalhes, por favor, visite meu
+      <a href="https://github.com/jeanscheibe">Github</a>
+    </p>
+    <!-- <h2>Projetos</h2>
+    <ul>
+        <li>Projeto 1</li>
+        <li>Projeto 2</li>
+        <li>Projeto 3</li>
+    </ul> -->
+    <script>
+      // Criando elementos dinâmicamente no DOM
+      // Ref.: https://developer.mozzila.org/pt-BR/docs/Web/API/Document/createElement
+
+      const subTitleEl = document.createElement("h2");
+      subTitleEl.innerHTML = "Projetos";
+
+      const pjListEl = document.createElement("ul");
+
+      const pjListItem1El = document.createElement("li");
+      pjListItem1El.innerHTML = "TODO MVC";
+
+      const pjListItem2El = document.createElement("li");
+      pjListItem2El.innerHTML = "Github API";
+
+      const pjListItem3El = document.createElement("li");
+      pjListItem3El.innerHTML = "E-Commerce";
+
+      pjListEl.append(pjListItem1El);
+      pjListEl.append(pjListItem2El);
+      pjListEl.append(pjListItem3El);
+
+      document.body.append(subTitleEl);
+      document.body.append(pjListEl);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <!-- CSS inline - dentro do próprio código -->
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1 id="title">Título da página</h1>
+    <button id="change_color">Alterar cor</button>
+
+    <script>
+      const titleEl = document.querySelector("#title");
+
+      const buttonEl = document.querySelector("#change_color");
+      buttonEl.addEventListener("click", () => {
+        // titleEl.style = "color: red"; "font-size: 55px"
+
+        //Outra forma de fazer
+        titleEl.style.color = "red";
+        title.style.fontSize = "55px";
+      });
+    </script>
+  </body>
+</html>

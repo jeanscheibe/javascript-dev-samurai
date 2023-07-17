@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <button>Clique me</button>
+    <a
+      href="https://developer.mozilla.org/pt-BR/docs/Web/API/Element/click_event"
+      >Clique me</a
+    >
+
+    <script>
+      // https://developer.mozzila.org/en-US/docs/Web/API/Element/click_event
+
+      const button = document.querySelector("button");
+      button.addEventListener("click", () => {
+        console.log("Clicou no botão");
+      });
+
+      const hyperlink = document.querySelector("a");
+      hyperlink.addEventListener("click", () => {
+        event.preventDefault(); // função para evitar que o método realiza seu comportamento padrão
+        console.log("Clicou no hyperlink");
+      });
+    </script>
+  </body>
+</html>

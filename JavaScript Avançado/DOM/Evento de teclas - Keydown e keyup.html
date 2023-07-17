@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <input type="text" />
+
+    <script>
+      //   const inputEl = document.querySelector("input[type=text]");
+      //   inputEl.addEventListener("keydown", (event) => {
+      //     console.log("keydown", event); // Adicionando o atributo event podemos saber no console qual tecla foi pressionada
+      //   });
+
+      //   inputEl.addEventListener("keyup", (event) => {
+      //     console.log("keyup");
+      //   });
+
+      const inputEl = document.querySelector("input[type=text]");
+      inputEl.addEventListener("keydown", (event) => {
+        console.log(
+          "event",
+          `${event.key} - ${event.keycode}`
+        ); /* Adicionando o atributo dessa 
+        forma podemos ver no console o código decimal da tecla pressionada */
+
+        if (event.keyCode === 13) {
+          alert(`Tecla ENTER pressionada = ${inputEl.value}`);
+        }
+      });
+    </script>
+  </body>
+</html>
